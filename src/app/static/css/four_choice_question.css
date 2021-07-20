@@ -1,0 +1,183 @@
+body{
+  margin: 0px;
+  padding: 20px;
+  background: #9adde5;
+  font-family: arial, sans-serif;
+  font-size: 10pt;
+  line-height: 15pt;
+}
+
+/* 問題選択タブ */
+#vertical_tab_nav{
+  display: block;
+  width: 100%;
+}
+#vertical_tab_nav > ul{
+  display: block;
+  float: left;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  width: 8%;
+  border-radius: 10px 0 0 10px;
+  background: #555;
+  overflow:auto;
+  height: 655px;
+}
+#vertical_tab > ul > li{
+  border-bottom: 1px solid #000;
+  margin-bottom: 1px;
+  text-align: left;
+  padding: 0px;
+}
+#vertical_tab_nav li:last-child{
+  margin-bottom: 0px;
+  border-bottom: 0px;
+}
+#vertical_tab > li > span{
+  display: block;
+  font-size: 10pt;
+  color: #fff;
+  text-decoration: none;
+  padding: 6px;
+  background: #57cac9;
+  background: -webkit-linear-gradient(top,#444,#333);
+  background: -moz-linear-gradient(top,#444,#333);
+  pointer-events: none;
+}
+#vertical_tab > li > span.selected{
+  background: #fff;
+  color: #000;
+}
+#vertical_tab_nav div{
+  display: block;
+  float: left;
+  background: #fff;
+  background: #fff;
+  width:86%;
+  height: 600px;
+  overflow:auto;
+  padding: 10px 3% 3% 3%;
+  border-radius: 0 10px 10px 0;
+}
+#vertical_tab_nav div article{
+  display: none;
+  margin: 0px;
+  color: #555;
+}
+#vertical_tab_nav div article p{
+  margin: 0px 0px 20px 0px;
+}
+
+/* 赤文字 */
+span.bold-red {
+  color: red;
+  font-weight: bold;
+}
+
+/* ユーザー情報記入位置 */
+#userAttributes{
+  position: absolute;
+  left: calc(50% - 150px);
+  top: calc(50% - 50px);
+}
+
+/* 選択肢 */
+.choices{
+  list-style: none;
+}
+.choices > li > span{
+    background-color: #a0d8ef;
+    margin: 10px 10px 10px 10px;
+    border: 1px solid #afadad;
+    border-radius: 5px;
+    padding: 2px;
+    display: block;
+    width: 1200px;
+    pointer-events: none;
+}
+.choices > li > span.choices_selected{
+  display: block;
+  width: 1200px;
+  font-size: 10pt;
+  color: #fff;
+  text-decoration: none;
+  padding: 6px;
+  background: #57cac9;
+  background: -webkit-linear-gradient(top,#444,#333);
+  background: -moz-linear-gradient(top,#444,#333);
+  pointer-events: none;
+}
+
+/* 採点ボタン */
+#scoringButton {
+  appearance: none;
+  border: 0;
+  border-radius: 5px;
+  background: #4676D7;
+  color: #fff;
+  padding: 8px 16px;
+  font-size: 16px;
+}
+
+/* テーブル設定 */
+table{
+  border-collapse:collapse;
+}
+
+td:nth-child(1) {
+  background-color:#0094ff;
+}
+
+td:nth-child(1){
+  color:white;
+}
+
+tr td {
+  border: 1px solid black;
+}
+
+/* ダイアログ設定 */
+#dialog {
+    display:none;
+}
+
+#dialogBackground {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0.5;
+}
+
+#dialogContent {
+    border-radius: 6px 6px 6px 6px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 300px;
+    height: 200px;
+    margin-left: -150px;
+    margin-top: -100px;
+    background-color: #dddddd;
+    text-align: center;
+    border: solid 1px;
+}
+
+#dialogMsg {
+    margin-top: 5px;
+}
+
+#dialogButton {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+#dialogButton > button {
+    margin: 0 5px 0 5px;
+}
