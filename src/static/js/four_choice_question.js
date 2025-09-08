@@ -40,7 +40,7 @@ function getRandomArrayNumByJson(jsonObject, num){
 function getFileQ(){
     // ファイルを読み込み
     var req = new XMLHttpRequest();
-    req.open("get", "../static/json/four_choice_question_q.json", true);
+    req.open("get", "../src/static/json/four_choice_question_q.json", true);
     req.send(null);
 
     // 読み込み状態を返す
@@ -51,7 +51,7 @@ function getFileQ(){
 function getFileA(){
     // ファイルを読み込み
     var req = new XMLHttpRequest();
-    req.open("get", "../static/json/four_choice_question_a.json", true);
+    req.open("get", "../src/static/json/four_choice_question_a.json", true);
     req.send(null);
 
     // 読み込み状態を返す

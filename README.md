@@ -37,5 +37,5 @@ sh src/sh/sam.sh [dev/stg/prd]
 python -m http.server 8000
 
 # ブラウザURL例:
-http://localhost:8000/IdeaProjects/four_choice_question/src/app/templates/four_choice_question.html
+http://localhost:8000/public/
 ```
